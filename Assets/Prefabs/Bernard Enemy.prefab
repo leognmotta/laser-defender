@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1863036176795763706}
   - component: {fileID: 1139537537458488321}
   - component: {fileID: 7889279468169654636}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bernard Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,6 +107,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  shotCounter: 0
+  minTimeBetweenShots: 0.2
+  maxTimeBetweenShots: 3
+  laserPrefab: {fileID: 3314345358118201066, guid: 8359e1eef5b133e4b84900776920971c,
+    type: 3}
+  projectileSpeed: 10
+  deathVFX: {fileID: 2219317594396847538, guid: 2c31a1572f68fb347ba43c5621d1179d,
+    type: 3}
+  durationOfExplosion: 1
 --- !u!58 &7889279468169654636
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -117,7 +126,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
