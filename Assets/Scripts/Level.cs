@@ -6,12 +6,19 @@ using UnityEngine.SceneManagement;
 public class Level : MonoBehaviour {
     [SerializeField] float delayInSeconds = 2f;
 
+    GameSession gameSession;
+
+    private void Start() {
+        gameSession = FindObjectOfType<GameSession>();
+    }
+
     public void LoadStartMenu() {
         SceneManager.LoadScene(0);
     }
 
     public void LoadGame() {
         SceneManager.LoadScene("Game");
+        gameSession.ResetGame();
     }
 
     public void LoadGameOver() {
