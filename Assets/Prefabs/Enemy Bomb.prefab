@@ -11,10 +11,11 @@ GameObject:
   - component: {fileID: 8699171170516764479}
   - component: {fileID: 4071406177746343252}
   - component: {fileID: 4243707817374646884}
-  - component: {fileID: 2656928213484586439}
-  - component: {fileID: 4026902356466262861}
+  - component: {fileID: 8593895619962860036}
+  - component: {fileID: 6503360482937359668}
+  - component: {fileID: 8358676836885274980}
   m_Layer: 11
-  m_Name: Enemy Laser
+  m_Name: Enemy Bomb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,8 +72,8 @@ SpriteRenderer:
   m_SortingLayerID: 1481307145
   m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6081dd3c849e6cb4292950a66c336019, type: 3}
-  m_Color: {r: 1, g: 0.79748267, b: 0.109803915, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 2acf5515863d6544ba76f6d20a036ae3, type: 3}
+  m_Color: {r: 1, g: 0.4348991, b: 0.109803915, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -103,8 +104,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!70 &2656928213484586439
-CapsuleCollider2D:
+--- !u!58 &8593895619962860036
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -117,9 +118,21 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.09, y: 0.37}
-  m_Direction: 0
---- !u!114 &4026902356466262861
+  serializedVersion: 2
+  m_Radius: 0.185
+--- !u!114 &6503360482937359668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3314345358118201066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89cc3564972959741bba00c796d68708, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8358676836885274980
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,4 +144,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22c9304b5b30dfa4b9fbe75448ccef1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 100
+  damage: 150
