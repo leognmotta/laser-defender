@@ -100,6 +100,10 @@ MonoBehaviour:
     type: 3}
   projectileSpeed: 20
   projectileFiringSpeed: 0.15
+  laserShootSoundFX: {fileID: 8300000, guid: e0488f7649a440f4fa9713055cd02edc, type: 3}
+  laserShootSoundFXVolume: 0.7
+  deathSoundFX: {fileID: 8300000, guid: 81a535e7f05f418479cda40f6c6b0b17, type: 3}
+  deathSoundFXVolume: 0.7
 --- !u!60 &830171156556548457
 PolygonCollider2D:
   m_ObjectHideFlags: 0
